@@ -1,0 +1,133 @@
+body {
+  background-color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 50px);
+  height: 100vh;
+}
+.left {
+  max-width: 50%;
+  width: 50%;
+  background-image: url(../background.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  transition: ease 0.3s;
+  justify-content: center;
+}
+.right {
+  width: 50%;
+  padding: 30px;
+}
+.content {
+  width: 300px;
+  margin: 20px 0 5px 0;
+}
+.button-g {
+  padding: 7px 25px;
+  background-color: #fff;
+  color: black;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease 0.3s;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.button-g:hover {
+  background-color: rgb(222, 222, 222);
+  transition: ease 0.3s;
+}
+.twit-logo {
+  margin-bottom: 50px;
+}
+.or {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.or-text {
+  margin: 0 5px 0 5px;
+}
+.line {
+  height: 1px;
+  background-color: rgb(67, 67, 67);
+  width: 140px;
+}
+.mail-phone {
+  padding: 7px 25px;
+  background-color: rgb(29, 155, 240);
+  color: black;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease 0.3s;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.sing-in {
+  padding: 7px 25px;
+  color: black;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease 0.3s;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: 1px solid gray;
+  color: white;
+}
+.sing-in:hover {
+  background-color: #fff;
+  color: rgb(29, 155, 240);
+}
+.footer {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: gray;
+  height: 100%;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 725px) {
+  .left {
+    display: none;
+    transition: ease 0.3s;
+  }
+  .right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
